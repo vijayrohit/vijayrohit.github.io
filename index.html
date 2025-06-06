@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vijay Rohit | Software Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-logo">PVR</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <button id="theme-toggle" class="theme-toggle">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+          <h1 data-aos="zoom-in">Sai Vijay Rohit Pantam</h1>
+          <span
+            id="typed"
+            class="typed-text"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          ></span>
+          <br />
+          <a href="#about" class="down-arrow" aria-label="Scroll to About">
+            <span>&#8595;</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div data-aos="fade-up">
+          <h2>About Me</h2>
+          <div class="about-grid">
+            <img src="dp.png" alt="Vijay Rohit" class="profile-img" />
+            <div class="about-text">
+              <p>
+                I'm a passionate software engineer with experience in building
+                web applications, open-source projects, and technical blogging.
+                I love solving problems and creating impactful solutions.
+              </p>
+              <p>
+                Currently, I'm focused on full-stack development, cloud
+                technologies, and contributing to the developer community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="timeline">
+        <div data-aos="fade-up">
+          <h2>My Timeline</h2>
+          <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Jan 2023 - Present</div>
+              <div class="timeline-content">
+                <h3>Software Engineer III - Zelis Healthcare</h3>
+                <p>
+                  Leading full-stack projects and mentoring junior developers
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Nov 2022 - Jan 2023</div>
+              <div class="timeline-content">
+                <h3>Software Development Engineer - Amazon</h3>
+                <p>
+                  Designed and developed for Amazonian Experience Tech solutions
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Mar 2022 - Nov 2022</div>
+              <div class="timeline-content">
+                <h3>Software Engineer - II - Zelis Healthcare</h3>
+                <p>
+                  Working on multiple software engineering aspects. Inspiring
+                  and mentoring incoming junior software engineers to write
+                  clean and efficient code for a great end-user experience
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Jun 2021 - Mar 2022</div>
+              <div class="timeline-content">
+                <h3>Junior Software Engineer - Zelis Healthcare</h3>
+                <p>
+                  Contributed to key product optimizations for Payments business
+                  unit
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div data-aos="fade-up">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card" data-aos="flip-left">
+              <img src="project.gif" alt="PfpFinder Project" />
+              <div class="card-overlay">
+                <h3>PfpFinder.com</h3>
+                <p>50k+ profile pictures served</p>
+                <a href="https://pfpfinder.com" target="_blank" class="btn"
+                  >View Project</a
+                >
+              </div>
+            </div>
+            <div class="project-card" data-aos="flip-left">
+              <img src="project.gif" alt="Project 2" />
+              <div class="card-overlay">
+                <h3>Tech Blog</h3>
+                <p>Technical articles and tutorials</p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+            <div class="project-card" data-aos="flip-left">
+              <img src="project.gif" alt="Project 3" />
+              <div class="card-overlay">
+                <h3>Open Source</h3>
+                <p>Contributions to popular repos</p>
+                <a href="#" class="btn">See Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div data-aos="fade-up">
+          <h2>Skills</h2>
+          <div class="tetris-skills-grid" id="tetris-skills-grid">
+            <!-- Skill badges will be injected here by JS -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-social">
+        <a
+          href="https://github.com/vijayrohit"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://linkedin.com/in/yourprofile"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:your.email@example.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p>© 2024 Vijay Rohit. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
