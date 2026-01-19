@@ -1,0 +1,82 @@
+/* Experience Styles */
+.experience-section {
+    padding: 40px 0;
+}
+
+.experience-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.experience-section a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.experience-item-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    transition: all 0.2s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .experience-item-card {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.experience-item-card:hover {
+    background: var(--surface-hover);
+    border-color: #555;
+}
+
+.exp-main-info {
+    flex: 1;
+}
+
+.exp-role-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+    /* Ensure title doesn't inherit weird link colors */
+}
+
+.exp-company-name {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.exp-date-badge {
+    font-family: var(--font-heading);
+    /* Switch from monospace to clean heading font */
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.read-more-icon {
+    color: var(--text-secondary);
+    margin-left: 16px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .read-more-icon {
+        display: block;
+    }
+}

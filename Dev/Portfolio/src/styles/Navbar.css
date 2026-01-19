@@ -1,0 +1,70 @@
+/* Navbar Dock Styles */
+.navbar {
+    position: fixed;
+    bottom: 32px;
+    /* Bottom docking like MacOS/Linear */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.nav-container {
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav-logo,
+.github-btn {
+    display: none;
+    /* Hide for the clean dock look */
+}
+
+.nav-links {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: flex;
+}
+
+.nav-link a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.nav-link a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active a {
+    color: #000;
+    background: white;
+    border-color: white;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Optional: Active state highlighting could be added via JS */

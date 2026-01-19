@@ -1,0 +1,79 @@
+.tech-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    /* Behind content */
+    pointer-events: none;
+    /* Let clicks pass through */
+    overflow: hidden;
+    background-color: #050505;
+    /* Solid dark background */
+}
+
+/* Optional: Add a subtle vignette or gradient overlay so text remains readable */
+.tech-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 0%, #050505 100%);
+    opacity: 0.8;
+}
+
+.tech-icon-wrapper {
+    position: absolute;
+    top: -100px;
+    /* Start above screen */
+    color: var(--text-secondary);
+    /* Or specific brand colors */
+    animation-name: fallAndRotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    will-change: transform;
+}
+
+@media (min-width: 768px) {
+    .tech-icon-wrapper {
+        filter: blur(0.5px);
+        /* Cinematic slight blur only on desktop */
+    }
+}
+
+@keyframes fallAndRotate {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+.binary-particle {
+    position: absolute;
+    top: -50px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(110vh);
+    }
+}
